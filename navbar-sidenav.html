@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome link-->
+    <script src="https://kit.fontawesome.com/8523657f3b.js" crossorigin="anonymous"></script>
+    <!-- fontawesome cdjns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- materialize link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Navbar</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        .login{
+            border-radius: 20px;
+
+        }
+        body{
+            font-family: poppins;
+        }
+        .google, .fontawesome{
+            margin-left: 50%;
+        }
+        .account{
+            margin-right: 50px;
+        }
+        .fb{
+            font-size: 12px;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- Navbar -->
+    <nav class="">
+        <div class="nav-wrapper">
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+        <ul class="left" style="font-size: 30px;">
+            <li style="font-family: dancing script;">Materialize CSS</li>
+        </ul>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="#!">Home</a></li>
+            <li><a href="#!">About</a></li>
+            <li><a href="#!">Contact</a></li>
+        </ul>
+        </div>
+    </nav>
+    <!-- Sidenav content-->
+    <ul class="sidenav" id="slide-out">
+        <li>
+            <a href="" class="small">
+                <img src="image/css.png" alt="">
+            </a>
+        </li>
+        <li class="divider"></li>
+        <li><a href="#!"></a></li>
+        <li><a href="#!">Home</a></li>
+        <li><a href="#!">About</a></li>
+        <li><a href="#!">Contact</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Settings<i class="fa-solid fa-circle-chevron-down right"></i></a></li>
+    </ul>
+    
+        <!-- Navbar Content -->
+    <h3 class="center red-text text-lighten-2">Navbar-Sidenav</h3>
+    <div class="divider"></div>
+    <div class="container">
+        <p>The navbar is fully contained by an HTML5 Nav tag. Inside a recommended container div, there are 2 main parts of the navbar. A logo or brand link, and the navigations links. You can align these links to the left or right.</p>
+
+        <h3 class="red-text text-lighten-2">Right Aligned Links</h3>
+        <p>To right align your navbar links, just add a right class to your <'ul'> that contains them.</p>
+        <nav class="white hoverable">
+            <div class="nav-wrapper">
+                    <a href="https://fontawesome.com/" class="brand-logo  blue-text" target="_blank">
+                        <i class="fa-solid fa-font-awesome fontawesome"></i>
+                    </a>
+                    <a href="" class="right grey-text text-darken-1"><i class="fa-solid fa-right-to-bracket account"></i></a>
+                    <div class="container">
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href="https://fontawesome.com/kits" class="grey-text text-darken-2">Start</a></li>
+                        <li><a href=""><i class="fa-solid fa-magnifying-glass grey-text text-darken-2"></i></li></a>
+                        <li><a href="https://fontawesome.com/icons" class="grey-text text-darken-2">Icons</a></li>
+                        <li><a href="https://fontawesome.com/account/general" class="grey-text text-darken-2">Docs</a></li>
+                        <li><a href=""></a></li>
+                    </ul>
+                
+                </div>
+            </div>
+        </nav>
+        <br>
+        <h3 class="red-text text-lighten-2">Left Aligned Links</h3>
+        <p>To left align your navbar links, just add a left class to your <'ul'> that contains them.</p>
+            <nav class=" blue lighten-1">
+                <div class="nav-wrapper">
+                    <a href="#" class="brand-logo right fb">
+                        <i class="fa-brands fa-square-facebook"></i>Facebook
+                    </a>
+                    <ul id="nav-mobile" class="left hide-on-med-and-down">
+                        <li><a href=""class="waves-effect waves-light btn  white black-text login">Login</a></li>
+                        <li><a href="" class="btn-flat white-text">Signup</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <br>
+            <h3 class="red-text text-lighten-2">Centering the logo</h3>
+            <p>The logo will center itself on medium and down screens, but if you want the logo to always be centered, add the center class to your <'a class="brand-logo"'>. You will have to make sure yourself that links do not overlap if you use this.
+            </p>
+                <nav class=" grey lighten-3">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo center">
+                            <i class="fa-brands fa-youtube red-text"></i>
+                        </a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href=""class="waves-effect waves-light btn  white black-text login">Login</a></li>
+                            <li><a href="" class="btn-flat black-text">Signup</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+            <h3 class="red-text text-lighten-2">Active Items</h3>
+            <p>Add active class to your li tags to denote the current page.</p>
+                <nav class="yellow lighten-1">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo right">
+                            <i class="fa-solid fa-face-sad-cry green-text text-darken-3"></i>
+                        </a>
+                        <ul id="nav-mobile" class="left hide-on-med-and-down">
+                            <li><a href="https://fontawesome.com/kits" target="_blank"  class="black-text">Kits</a></li>
+                            <li><a href="https://fontawesome.com/icons" target="_blank"  class="black-text">Icons</a></li>
+                            <u><li class="active"><a href="https://fontawesome.com/account/general" target="_blank"  class="black-text">Account</a></li></u>
+                        </ul>
+                    </div>
+                </nav>
+                <br>
+                <h3>Extended Navbar with Tabs</h3>
+                <p>To add extended components to the navbar, add the class nav-extended to the outer nav tag. This will allow your navbar height to be variable. Then you can just include a tabs component inside the nav-wrapper.
+                </p>
+                <nav class="nav-extended grey darken-3">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo left">
+                            <i class="fa-brands fa-google google"></i>
+                        </a>
+                        <a href="#" class="brand-logo right">
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </a>
+                    
+                    </div>
+                    <div class="divider"></div>
+                    <div class="nav-content">
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a href="#test1">Images</a></li>                                
+                            <li class="tab"><a href="#test2">Videos</a></li>                               
+                            <li class="tab"><a href="#test3">Settings</a></li>
+                            
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Tabs Structure -->
+                <div class="row">
+                    <div class="col-s12" id="test1">
+                        <div class="card">
+                            <div class="row col s6 m8 offset-m2 l6">
+                                <div class="card-image">
+                                    <img src="image/nikeshoe.jpg" alt="" class="responsive-img" >
+                                </div>
+                            </div>
+                            <div class="row col s6">
+                                <div class="card-image">
+                                    <img src="image/nike.jpg" alt="" class="responsive-img" >
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-s12" id="test2">
+                        <div class="card">
+                            <div class="card-image">
+                                <div class="video-container">  
+                                    <iframe width="681" height="383" src="https://www.youtube.com/embed/fMH3CsEEcMA" 
+                                        title="Media Part 2" 
+                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-s12" id="test3">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="image/mcdo.jpg" alt="" class="responsive-img" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <h3>Navbar Dropdown Menu</h3>
+                <p>To add a navbar dropdown menu, add the ul dropdown structure into the page. Then, add an element to trigger the dropdown menu. Make sure to supply the id of the dropdown structure to the data-target attribute of the dropdown trigger.</p>
+                
+                <nav class=" pink ">
+                    <div class="nav-wrapper">
+                        <!-- Dropdown Structure -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="#!">Profile</a></li>
+                            <li><a href="#!">Account</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#!">Logout</a></li>
+                        </ul>
+                        <a href="#" class="brand-logo lefy">
+                            <i class="fa-brands fa-instagram small" style="margin-left: 10px;"></i>
+                        </a>
+                        <ul id="nav-mobile" class="right hide-on-med-and-down">
+                            <li><a href=""class="waves-effect waves-light btn  white black-text login">Login</a></li>
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Settings <i class="fa-solid fa-circle-chevron-down"></i></a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+    </div>
+
+    <div style="height: 300px;"></div>
+
+
+    <!--  -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tabs').tabs();
+            $(".dropdown-trigger").dropdown();
+            $('.sidenav').sidenav();
+        });
+        
+    </script>
+</body>
+</html>
